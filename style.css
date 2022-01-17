@@ -1,0 +1,209 @@
+:root{
+  --backgroundColor: #606060;
+  --backgroundColorGradient: #C8C8C8;
+  --greenButton: #20A058;
+  --letterColor: #38A868;
+  --backgroundMenuColor:rgba(0,0,0,.4);
+  --menuIconColor:#5C5C5C;
+  --letterMenuColor:#F1F1F1;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background: radial-gradient(circle, rgba(200,200,200,1) 8%, rgba(96,96,96,1) 100%);
+}
+
+
+.grid{
+  
+  width: 100vw;
+}
+main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height: var(--vh);
+ 
+}
+
+.formLogin{
+  width: 320px;
+  height: 80%;
+  background:#FDFDFD;
+  padding:10px 20px;
+  border-radius: 8px;
+}
+.formLogin button{
+  width:100%;
+  height:40px;
+  border:none;
+  border-radius:18px;
+  background: var(--greenButton);
+  margin-top: 25px;
+  color:#FFF;
+  font-size: 4vw;
+}
+.formHeader{
+  height:40%;
+  width:100%;
+  border-bottom:1px solid #ccc;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+  
+}
+.formHeader div{
+  margin-left:-180px;
+  margin-top:20px;
+  color:#BABABA;
+}
+.formHeader img{
+  width:60%;
+  height:50%;
+  margin-top:20px;
+ 
+}
+.listMenu{
+ 
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  text-transform: uppercase;
+  height:80vh;
+  width:80vw;
+  color:var(--letterMenuColor);
+  padding:20px 10px;
+  justify-content: space-between;
+  font-size: 3vw;
+  
+}
+.navBar{
+  display:flex;
+  width: 80vw;
+  height:100vh;
+  position: fixed;
+  align-items: center;
+  justify-content:center;
+  background:var(--backgroundMenuColor);
+  transform: translateX(-100%);
+  transition: all .4s  ease-in-out;
+}
+.navBar.active{
+  transform: translateX(0)
+}
+.menuToogle{
+ 
+  width:25px;
+  height:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform:translate(100%);
+  background: url('https://api.iconify.design/bi/arrow-left-square-fill.svg') no-repeat center center / contain;
+}
+.menuToogle.active{
+  background: url('https://api.iconify.design/bi/arrow-right-square-fill.svg') no-repeat center center / contain;
+}
+.listHeader{
+  display:flex;
+  align-items: center;
+  gap:40px;
+}
+.formBody{
+  height:60%;
+  width:100%;
+  padding:10px 0 10px 0;
+}
+.formBody input{
+  width:100%;
+  height:40px;
+  border:2px solid #CCC;
+  outline:none;
+  padding:5px;
+  border-radius: 4px;
+}
+.formBody input:focus{
+  border:2px solid #5BB75B;
+}
+.divPassword{
+  display:flex;
+  align-items: center;
+ 
+}
+.divPassword input{
+  border-radius: 4px 0px 0px 4px;
+  
+  
+}
+.statePassword{
+  border:2px solid #CCC;
+  border-left:0;
+  width:16%;
+  height:40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0 4px 4px 0;
+  background: url('https://api.iconify.design/fa-regular/eye.svg') no-repeat center center / contain;
+  background-size: 60%;
+}
+.statePassword.active{
+  background: url('https://api.iconify.design/fa-solid/eye-slash.svg') no-repeat center center / contain;
+  background-size: 60%;
+}
+
+footer{
+  color:#FFF;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  
+}
+
+footer.containerFooter{
+  display:flex;
+  flex-direction: column;
+ 
+}
+
+.containerFooter div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+
+
+.divSecondFooter
+{
+  display:flex;
+  gap:15px;
+
+}
+
+.divSecondFooter div{
+  display:flex;
+  align-items: center;
+ 
+}
+
+.formDetails{
+  margin-top:30px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: end;
+}
+.formDetails h5{
+  color:var(--letterColor);
+  font-weight: 300;
+}
