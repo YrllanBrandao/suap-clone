@@ -21,6 +21,7 @@ body{
 .grid{
   
   width: 100vw;
+  min-height: var(--vh);
 }
 main{
   display:flex;
@@ -32,7 +33,7 @@ main{
 }
 
 .formLogin{
-  width: 320px;
+  width: 90%;
   height: 85%;
   background:#FDFDFD;
   padding:10px 20px;
@@ -207,4 +208,5 @@ footer.containerFooter{
 .formDetails h5{
   color:var(--letterColor);
   font-weight: 300;
+  font-size: 1em;
 }
